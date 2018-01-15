@@ -1,0 +1,18 @@
+friend_links:
+  - name: 凹凸实验室
+    desc: 京东凹凸实验室
+    link: https://aotu.io
+  - name: 百度FEX
+    desc: 百度FEX
+    link: http://fex.baidu.com
+  - name: 派药网
+    desc: 派药网
+    link: http://www.paiyaowang.com
+  - name: DPlayer 
+    desc: HTML5 播放器 DPlayer
+    link: http://dplayer.js.org/
+
+#build_tools:
+#  - name: Hexo
+#    desc: Blog Framework
+#    link: https://hexo.io/

@@ -1,0 +1,203 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+# Site
+# 博客的标题
+title: LOME LEE
+language: zh-cn
+timezone:
+
+# banner显示的子标题
+subtitle: LOME LEE BLOG
+
+# banner显示的简短介绍
+subtitle_desc: to be the best
+
+# seo关键字
+keywords: lomelee, lome lee, lome lee blog, 程序员博客, 技术博客, 博客, 程序员, 架构师
+
+# 博客介绍（同时用于seo）
+description: 个人学习总结和兴趣交流博客
+
+# 个人介绍
+introduction: 自律让我自由！
+
+# 博客的favicon图标，支持本地及在线两种方式，本地请将图标放置于 themes/hexo-theme-skapp/source/img 目录下
+favicon_ico: /img/favicon.ico
+
+# 博客的左上角logo图标，支持本地及在线两种方式
+logo: /img/Logo.png
+
+# 头像/二维码（用于显示在底部）二选一
+avatar: /img/lomelee_qrcode.jpg
+# qrcode: http://oo12ugek5.bkt.clouddn.com/images/qrcode.png
+
+# 文章的默认封面 #http://oo12ugek5.bkt.clouddn.com/images/default_cover.png
+default_cover: http://oys481nr9.bkt.clouddn.com/default_cover.jpg
+
+# header 的背景图 http://oo12ugek5.bkt.clouddn.com/blog/images/banner-bg.jpg
+header_cover: http://oys481nr9.bkt.clouddn.com/header_back.jpg
+
+# 404 页面的背景图 http://oo12ugek5.bkt.clouddn.com/blog/images/dogs.jpg
+error_page_bg: http://oys481nr9.bkt.clouddn.com/not_fund.jpg
+
+# 页面加载loading图标
+loader_img: /img/loading.gif
+
+# 站长信息
+author:
+  name: lome lee
+  #link: 
+# 用于页面 footer 的站长信息
+about:
+  info: 学习、生活及工作的一些心得总结，欢迎联系我加友链
+  address: Chongqing, China
+  email: lee@lomelee.com
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://www.lomelee.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: ../lomelee.github.io
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: hexo-theme-skapp
+
+######-----------------------------主题个性配置------------------------#############
+
+#菜单
+menu:
+  #主页
+  home: / 
+  #归档
+  archive: /archives
+  #关于
+  #about: /about
+
+# Sass
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
+
+# Autoprefixer
+autoprefixer:
+  exclude:
+    - '*.min.css'
+  browsers:
+    - 'last 2 versions'
+
+# Lunr
+lunr:
+  field: all
+  fulltext: false
+  path: assets/lunr/
+
+# filter_cleanup
+hfc_useref:
+  enable: true
+  concat: true
+
+hfc_html:
+  enable: true
+  exclude:
+
+hfc_css:
+  enable: true
+  exclude: 
+    - '*.min.css'
+
+hfc_js:
+  enable: true
+  mangle: true
+  exclude: 
+    - '*.min.js'
+
+hfc_img:
+  enable: false
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+
+hfc_favicons:
+  enable: false
+  src: img/blog-logo.png
+  target: img/
+  icons:
+    android: true
+    appleIcon: true
+    appleStartup: false
+    coast: false
+    favicons: true
+    firefox: false
+    opengraph: false
+    windows: true
+    yandex: false
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type:
+
+# Baidu statistic 百度站长统计
+baidu_statistic: fdc0aed3c0cab21b6ab8496574783424
+
+# Busuanzi　统计PV
+busuanzi: false
