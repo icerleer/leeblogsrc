@@ -63,7 +63,7 @@ permalink_defaults:
 
 # Directory
 source_dir: source
-public_dir: ../lomelee.github.io
+public_dir: ../icerleer.github.io
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
