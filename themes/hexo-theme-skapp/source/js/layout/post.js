@@ -31,8 +31,7 @@ window.addEventListener('load', function() {
 
             var pack = new Pack(post);
 
-            pack
-                .base('js-ease-out-leave-active')
+            pack.base('js-ease-out-leave-active')
                 .base('js-ease-out-leave')
                 .transfrom('js-ease-out-enter-active')
                 .end(function() {
@@ -51,6 +50,12 @@ window.addEventListener('load', function() {
 
                     pack.toggle();
                 }
+            });
+
+            post.addEventListener("click", function(event) {        
+                var hrefUrl = post.attributes["itemUrl"].nodeValue;
+                window.location.href = hrefUrl;
+                // console.log("获取到到：", post, hrefUrl);
             });
         });
     }

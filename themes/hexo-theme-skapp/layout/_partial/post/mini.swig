@@ -1,4 +1,4 @@
-<article itemscope itemtype="http://schema.org/Article" class="page__mini-article">
+<article itemscope itemtype="http://schema.org/Article" class="page__mini-article" itemUrl={{ url_for(post.path) }}>
     
     <div class="mini-article__cover">
         {% if not post.cover %}
@@ -15,7 +15,7 @@
                 <span class="date__month">{{ date(post.date || post.update, 'MMM') }}</span>
             {% endif %}
         </div>        
-        <a itemprop="url" class="iconfont icon-enter" href="{{ url_for(post.path) }}"></a>        
+        <a itemprop="url" class="href-url iconfont icon-enter" href="{{ url_for(post.path) }}"></a>        
     </div>
     
     <div class="mini-article__info">
