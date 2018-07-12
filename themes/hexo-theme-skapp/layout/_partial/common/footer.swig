@@ -48,7 +48,7 @@
     </section>
     <section class="footer__bottom">
         <div class="page__container footer__container">
-            <p class="footer__copyright">© 2017 Lome Lee</p>
+            <p class="footer__copyright">© 2018 Lome Lee</p>
             <ul class="footer__social-network clearfix">
                 {% if site.data.contact %}
                 {% for item in site.data.contact %}
