@@ -10,7 +10,7 @@ friend_links:
     link: http://www.ixyt.com
   - name: DPlayer 
     desc: HTML5 播放器 DPlayer
-    link: http://dplayer.js.org/
+    link: https://dplayer.js.org/
 
 #build_tools:
 #  - name: Hexo
