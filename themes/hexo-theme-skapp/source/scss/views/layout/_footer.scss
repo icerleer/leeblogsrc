@@ -13,13 +13,12 @@ body {
 }
 
 .page__footer {
-    
 }
 
 .footer__top {
     padding: 30px 0;
     background-color: $bgc--footer;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
 
     .footer__container {
@@ -63,7 +62,6 @@ body {
     }
 
     .item__content {
-        
     }
 }
 
@@ -76,11 +74,22 @@ body {
         & + .list-item {
             margin-top: 12px;
         }
-        
+
         & > a {
             @include link($main-color);
             color: #fff;
         }
+    }
+}
+
+.resumlist-item {
+    & + .list-item {
+        margin-top: 12px;
+    }
+
+    & > a {
+        @include link($main-color);
+        color: #fff;
     }
 }
 

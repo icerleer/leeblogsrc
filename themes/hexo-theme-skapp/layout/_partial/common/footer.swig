@@ -16,6 +16,10 @@
                             <i class="iconfont icon-email2"></i>
                             <span>{{ about.email }}</span>
                         </li>
+                        <li class="contact-info__item resumlist-item">
+                            <i class="iconfont icon-like"></i>
+                            <a href="{{ about.resumeLink }}" target="_blank"> {{ about.resume }}</a>
+                        </li>
                     </ul>
                 </div>
             </div>
