@@ -54,11 +54,11 @@ about:
   address: Chongqing, China
   email: lee@lomelee.com
   resume: 我的简历
-  resumeLink: https://www.lomelee.com/lee/resume.html
+  resumeLink: https://lomelee.com/lee/resume.html
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.lomelee.com
+url: https://lomelee.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
